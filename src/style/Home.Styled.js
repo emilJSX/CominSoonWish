@@ -15,17 +15,10 @@ export const ComingSoonBody = styled(Container)`
         padding: 0;
     }
 
-    @media (min-width: 1280px) and (min-height: 800px) {
+    @media (min-width: 1220px) and (max-height: 1000px) {
         height: 770px;
     }
-
-    @media (min-width: 1220px) and (min-height: 800px) {
-        height: 770px;
-    }
-    @media (min-width: 1200px) and (min-height: 800px) {
-        height: 770px;
-    }
-
+   
     .mantine-Grid-root {
         @media (min-width: 375px) and (max-width: 550px) { 
            display: contents;
