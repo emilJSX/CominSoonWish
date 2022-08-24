@@ -1,10 +1,12 @@
 import { Container } from "@mantine/core";
 import styled from "styled-components";
+import '../fonts/Web-PS/Steppe.css'
 
 export const ComingSoonBody = styled(Container)`
     max-width:1340px;
     padding-left: 150px;
     border-radius: 15px;
+    
     margin-top: 15px;
     background: linear-gradient(90deg, #3800B0 0%, #6033C0 50%, #8866D0 100%);
 
@@ -95,7 +97,7 @@ export const TextSection = styled.div`
 `
 
 export const Maintxt = styled.h1 `
-    font-family: sans-serif;
+    font-family: 'Steppe' !important;  
     font-size: 88px;
     color: white;
     font-weight: 600;
@@ -117,7 +119,7 @@ export const Maintxt = styled.h1 `
 `
 
 export const Secondtxt = styled.p`
-    font-family: sans-serif;
+    font-family: 'Steppe' !important;
     padding-left: 5px;
     margin-top: -35px;
     color: white;
@@ -131,7 +133,7 @@ export const Secondtxt = styled.p`
 `
 
 export const İnputtxt = styled.p`
-    font-family: sans-serif;
+    font-family: 'Steppe' !important;
     padding-top: 150px;
     color: white;
 
@@ -152,7 +154,7 @@ export const SubscribeForm = styled.form`
 
 export const IconsSection = styled.div`
     display: flex;
-    gap: 10px;
+    gap: 20px;
     margin-top: -15px;
     padding-bottom: 20px;
     margin-left: -9px;
