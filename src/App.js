@@ -1,6 +1,6 @@
-import { React } from "react";
+import { React, useState } from "react";
 import { Image, Grid, Button } from "@mantine/core";
-import { ComingSoonBody, Logo, Maintxt, Secondtxt, TextSection, İnputtxt, SubscribeForm, IconsSection} from "./style/Home.Styled";
+import { ComingSoonBody, Logo, Maintxt, Secondtxt, TextSection, İnputtxt, SubscribeForm, IconsSection, SubscribeText} from "./style/Home.Styled";
 import logo from '../src/images/wish-x-white-logo.svg'
 import screenfoto from '../src/images/coming-soon.png'
 import { TextInput } from '@mantine/core';
@@ -10,6 +10,10 @@ import instagram from '../src/images/instagram.svg'
 import twitter from '../src/images/twitter.svg'
 
   function App() {
+    const [isActive, setIsActive] = useState(false);
+    const handleClick = () => {
+      setIsActive(current => !current);
+    }
 
     const sendEmail = (e) => {
       e.preventDefault();
@@ -36,7 +40,8 @@ import twitter from '../src/images/twitter.svg'
           <TextSection>
             <SubscribeForm onSubmit={sendEmail}>
               <TextInput placeholder="Your email" name="email" id="myInput" className="input-sect" />
-              <Button type="submit" className="btn">Subscribe</Button>
+            <Button onClick={handleClick} type="submit" style={{ display : isActive ? 'none' : 'block' }} className="btn">Subscribe</Button> 
+            <SubscribeText  style={{display: isActive ? 'block' : 'none'}}>Thank you for subscribing! You will be the first to know about new releases! Stay tuned.</SubscribeText>
             </SubscribeForm>
           </TextSection>
 

@@ -186,3 +186,25 @@ export const IconsSection = styled.div`
         }
     }
 `
+
+export const SubscribeText = styled.p`
+    width: 354px;
+    padding-left: 67px;
+    margin: 0;
+    margin-top: 10px;
+    font-family: 'Steppe';
+    font-size: 14px;
+    color: white;
+    
+    font-weight: 600;
+
+    @media (min-width: 375px) and (max-width: 550px) {
+        padding-left: 0px;
+        padding-top: 5px;
+        font-size: 13px;
+        width: 325px;
+        text-align: center;
+    }
+
+    
+`
