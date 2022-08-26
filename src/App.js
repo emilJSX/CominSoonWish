@@ -31,7 +31,7 @@ import twitter from '../src/images/twitter.svg'
       <Grid id="contain">
         <Grid.Col className="col-one" style={{ padding: "0px" }} span={5}>
           <Maintxt>Coming soon</Maintxt>
-          <Secondtxt>your wishes will be come true</Secondtxt>
+          <Secondtxt>your wishes will become true</Secondtxt>
           <İnputtxt className="input-txt">Inform when the website will be available</İnputtxt>
           <TextSection>
             <SubscribeForm onSubmit={sendEmail}>
