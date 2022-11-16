@@ -49,21 +49,30 @@ export const ComingSoonBody = styled(Container)`
     #img-class {
         padding-left: 100px;
         margin-top: -70px;
-
+        
         @media (min-width: 375px) and (max-width: 550px) { 
             padding-left: 10px;
             margin-top: -570px;
             padding-top: 30px;
             width: 210% !important;
         } 
-
+        
         @media (min-width: 390px) and (max-width:460px) {
             width: 180% !important;
             margin-top: -590px;
             padding-left:35px;
         }
-    }
+        
+        @media (min-width: 950px) and (max-width: 1050px) {
+            padding-left: 65px;
+            margin-top: 29px;
+        }
 
+        @media (min-width: 1050px) and (max-width: 1200px) {
+            margin-top: -60px;
+        }
+    }
+    
 `
 
 export const Logo = styled.div`
@@ -118,7 +127,9 @@ export const Maintxt = styled.h1 `
         font-size: 70px;
     }
 
-    @media (min-width: 1200px)
+    @media (min-width: 950px) and (max-width: 1200px) {
+        font-size: 52px;
+    }
 
 `
 
@@ -176,6 +187,10 @@ export const IconsSection = styled.div`
         padding-top: 20px;
     }
 
+    @media (min-width: 950px) and (max-width: 1200px) {
+        margin-top: 22px;
+    }
+
     #soc-icons {
         width: 1.5% !important;
         display: flex;
@@ -204,6 +219,10 @@ export const SubscribeText = styled.p`
         font-size: 13px;
         width: 325px;
         text-align: center;
+    }
+
+    @media (min-width: 950px) and (max-width: 1460px) {
+        margin-top: 1px;
     }
 
     
